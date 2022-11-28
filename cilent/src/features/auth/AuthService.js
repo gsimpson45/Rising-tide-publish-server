@@ -4,7 +4,7 @@ import axios from "axios"
 
 
  export const register=(user)=>{
-    axios.post("http://localhost:8080/users/add", JSON.stringify(user),
+    axios.post("https://rising-tide.herokuapp.com/users/add", JSON.stringify(user),
     {
         headers: {
             'Content-Type': 'application/json'
