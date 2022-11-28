@@ -8,7 +8,7 @@ export const addJournalPost=async (journal)=>{
     let journalData;
 
     let token=JSON.parse(localStorage.getItem("user"));
-    await axios.post("http://localhost:8080/journals/add", JSON.stringify({journal,token}),
+    await axios.post("https://rising-tide.herokuapp.com/journals/add", JSON.stringify({journal,token}),
     {
         headers: {
             'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ export const addJournalPost=async (journal)=>{
 export const getJournalPost=async (date)=>{
     let journalData;
     let token=JSON.parse(localStorage.getItem("user"));
-    await axios.post("http://localhost:8080/journals/get", JSON.stringify({date,token}),
+    await axios.post("https://rising-tide.herokuapp.com/journals/get", JSON.stringify({date,token}),
     {
         headers: {
             'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ export const getJournalPost=async (date)=>{
 export const getHabitPost=async (date)=>{
     let completedHabits;
     let token=JSON.parse(localStorage.getItem("user"));
-    await axios.post("http://localhost:8080/habits/get", JSON.stringify({token,date}),
+    await axios.post("https://rising-tide.herokuapp.com/habits/get", JSON.stringify({token,date}),
     {
         headers: {
             'Content-Type': 'application/json'
@@ -77,7 +77,7 @@ export const getHabitPost=async (date)=>{
 export const addHabitPost=async (habit)=>{
     let habitData;
     let token=JSON.parse(localStorage.getItem("user"));
-    await axios.post("http://localhost:8080/habits/add", JSON.stringify({habit,token}),
+    await axios.post("https://rising-tide.herokuapp.com/habits/add", JSON.stringify({habit,token}),
     {
         headers: {
             'Content-Type': 'application/json'
