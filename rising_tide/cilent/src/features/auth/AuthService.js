@@ -1,10 +1,10 @@
 import axios from "axios"
 
-//const API_URL="http://localhost:5000/users/add"
+
 
 
  export const register=(user)=>{
-    axios.post("http://localhost:5000/users/add", JSON.stringify(user),
+    axios.post("http://localhost:8080/users/add", JSON.stringify(user),
     {
         headers: {
             'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ import axios from "axios"
 }
 export const  logIn=(user)=>{
     console.log( JSON.stringify(user))
-    axios.post("http://localhost:5000/users/logIn", JSON.stringify(user),
+    axios.post("http://localhost:8080/users/logIn", JSON.stringify(user),
     { headers: {
         'Content-Type': 'application/json'
     },
