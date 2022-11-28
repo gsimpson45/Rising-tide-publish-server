@@ -1,0 +1,346 @@
+:root{
+  /*--font: "Copperplate";*/
+  --color: rgb(165, 79, 42);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+    background-color: #e4f5ff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+p{
+  font-family: var(--font);
+  color: var(--color);
+  overflow-wrap: break-word;
+}
+h1{
+  font-size: 32px;
+  font-family: var(--font);
+  color: var(--color);
+}
+.bigH1{
+  font-size: 42px;
+}
+
+h2{
+  font-family: var(--font);
+  color: var(--color);
+}
+.bigH2{
+  font-size: 36px;
+}
+
+h3{
+  font-family: var(--font);
+  color: var(--color);
+}
+.bigH3{
+  font-size: 29px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*The navbar box*/
+.navbar {
+  background-color: lightblue;
+  
+}
+
+/*Navbar text*/
+.nav-link{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  
+}
+
+/*Navbar text overriding bootstrap*/
+.navbarLink{
+  font-size: 2.2vw;
+  font-family: var(--font);
+  color: rgb(62, 110, 158);
+}
+
+/*Navbar text conditional to screen width*/
+@media screen and (min-width: 900px) {
+  .navbarLink{
+     font-size: 24px;
+  }
+}
+
+/*General button css*/
+button{
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+/*Text box css (not textarea)*/
+input[type=textbox], input[type=password], input[type=email]{
+  margin-bottom: 10px;
+  width: 40%
+}
+
+/*Radio button and checkbox css*/
+input[type=radio], label, input[type=checkbox]{
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+label{
+  font-size: 3vw;
+  margin-left: 5px;
+  font-family: var(--font);
+  color: var(--color);
+}
+.bigLabel{
+  font-size: 3.3vw;
+  margin-left: 5px;
+  font-family: var(--font);
+  color: var(--color);
+}
+
+
+/*Label css conditional to screen size*/
+@media screen and (min-width: 900px) {
+  label{
+     font-size: 25px;
+  }
+  .bigLabel{
+    font-size: 35px;
+  }
+}
+
+/*Box in the journal page for mood tracking*/
+#moodTrackingDiv{
+  border-radius: 20px;
+  background-color:#fefcf0;
+  margin: 10px;
+  padding-bottom: 10px;
+  
+}
+
+/*Generalmiddle box*/
+#container{
+  padding-top: 20px;
+  background-color: #f8f3de;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  padding-bottom: 20px;
+  
+}
+
+/*Middle box for the weekly view*/
+#weeklyViewContainer{
+  padding-top: 20px;
+  background-color: #f8f3de;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  width: 60%;
+  padding-bottom: 20px;
+}
+
+/*Also includes archive page*/
+#containerSignUpOrOut{
+  padding-top: 20px;
+  background-color: #f8f3de;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  min-height: 100vh;
+  
+}
+
+/*Picture css*/
+img{
+  height: 20vw;
+}
+button[type=image], .shellButton{
+  height: 20vw;
+}
+
+/*Picture css conditional to screen size*/
+@media screen and (min-width: 1000px) {
+  img{
+     height: 200px;
+  }
+  button[type=image], .shellButton{
+    height: 200px;
+ }
+}
+
+/*Company footer box*/
+footer{
+  background-color: lightblue;
+}
+
+/*The actual background*/
+#root{
+  background-color: #e7c7b4;
+}
+
+/*Table css for centered items*/
+#navTable, #moodTable, #archivePageTable, #weeklyViewTable{
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+
+/*Jounal daily affirmation textarea*/
+textarea{
+  resize: none;
+  display: block;
+  font-size: 2vw;
+  line-height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 70px;
+  height: 300px;
+  width: 70%;
+  border-color: rgb(135, 210, 231);
+  padding: 30px;
+  outline: none;
+  overflow: hidden;
+}
+
+.journalHeader{
+  margin-bottom: 40px;
+}
+
+/*Important buttons*/
+#journalSubmitBtn, #signUpBtn, #signInBtn, #archiveSubmitBtn, #archiveBackBtn, #weeklyViewBackBtn, #weeklyViewEditJournalBtn{
+  margin: 20px;
+  background-color: rgb(133, 204, 227);
+  border: none;
+}
+
+/*General buttons*/
+button{
+  margin: 8px;
+  background-color: rgb(133, 204, 227);
+  border-color: rgb(133, 204, 227);
+  border-radius: 10px;
+}
+
+/*Box for habit section of the journal page*/
+#habitWidget{
+  border-radius: 10px;
+  background-color:#fefcf0;
+  margin: 10px 40px;
+}
+
+#habitTable{
+  width: 100%;
+  vertical-align: middle;
+}
+
+/*Gets rid of annoying outlines when you click on a textbox*/
+input:focus, textarea {
+  outline: none;
+}
+
+/*Row for typing a new habit in*/
+#newHabitInput{
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #fefcf0;
+}
+
+/*Each row of the habit table*/
+#habitTable tr {
+  border-bottom: solid #e7c7b4;
+  font-size: 20px;
+  height: 50px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+#habitsLabel{
+  display: inline;
+  margin-left: 10px;
+}
+
+input[type=checkbox]{
+  width: 5vw;
+  height: 5vw;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.signUpFormLabels{
+  display: inline;
+}
+
+#deleteHabitButton, #addHabitButton{
+  margin-left: 1vw;
+}
+
+.weeklyViewTableBorder{
+border-left: solid #e7c7b4;
+
+}
+
+#weeklyViewTable{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.weeklyShell, .shellButton{
+  margin: 10px;
+  height: 15vw;
+}
+@media screen and (min-width: 900px) {
+  .weeklyShell, .shellButton{
+     height: 100px;
+  }
+}
+
+.helpDiv{
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ece0c1;
+  border-radius: 5px;
+}
+
+.indented{
+  margin-left: 5vw;
+}
+
+#navTable td:hover{
+  background-color: rgb(150, 203, 221);
+  border-radius: 5px;
+  margin: 20px;
+}
+
+#footer{
+  display: inline;
+  color: black;
+}
+
+@media print {
+  #archiveBackBtn {
+     visibility: hidden;
+  }
+}
+
+#weeklyViewMoodInput{
+  border-radius: 4px;
+  border-color: rgb(135, 210, 231);
+}
+
+.bigTextArea{
+  font-size: 2.2vw;
+}
