@@ -539,8 +539,8 @@ let loadJournalEditPage = function(){
     let displayMood = document.getElementById("displayMood");
     let displayHabits = document.getElementById("displayHabits");
     let displayTextInput = document.getElementById("displayTextInput");
-    let capitalizedMood = mood.charAt(0).toUpperCase() + mood.slice(1);
-    displayMood.innerHTML = "<input type='text' id='weeklyViewMoodInput' value='" + capitalizedMood + "'></input>";
+
+    displayMood.innerHTML = "<input type='text' id='weeklyViewMoodInput' value='" + mood + "'></input>";
     displayHabits.innerHTML = habits;
     displayTextInput.innerHTML = "<textarea id ='weeklyViewTextArea'>" + dailyAffirmation + "</textarea>";
 }
