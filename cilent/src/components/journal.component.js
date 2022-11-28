@@ -238,6 +238,7 @@ const checkedHabit = event => {
 
         //Sets habit to no longer active
         habitsArray[index].activated = false;
+        habitsArray[index].isCompleted = false;
 
         //Hides the delete buttons after row deletion
         showingDeleteButtons = false;
